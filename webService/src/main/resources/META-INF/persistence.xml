@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence
+                                 http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd"
+             version="1.0">
+    <persistence-unit name="Auction" transaction-type="RESOURCE_LOCAL">
+        <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+        <class>com.demo.auction.entity.Domain</class>
+        <class>com.demo.auction.entity.AuctionUser</class>
+        <class>com.demo.auction.entity.Lot</class>
+        <class>com.demo.auction.entity.Bid</class>
+            <properties>
+                <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+                <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/auction"/>
+                <property name="javax.persistence.jdbc.user" value="admin"/>
+                <property name="javax.persistence.jdbc.password" value="admin"/>
+                <property name="eclipselink.target-database" value="PostgreSQL"/>
+                <property name="eclipselink.ddl-generation" value="create-tables"/>
+                <property name="eclipselink.weaving" value="false"/>
+            </properties>
+    </persistence-unit>
+</persistence>
+
