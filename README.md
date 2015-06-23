@@ -4,7 +4,7 @@ Gui subsystem is used for representation.
 WebService subsystem is used for implementation of the system's logic.
 # Installation
 * JDK 1.6
-* Apache Maven 2.2.1
+* Apache Maven 3.0.5
 * Apache-tomee-webprofile-1.7.0
 * PostgreSQL 9.3.6
 
