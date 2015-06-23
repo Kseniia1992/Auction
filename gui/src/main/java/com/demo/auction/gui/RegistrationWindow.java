@@ -23,13 +23,13 @@ public class RegistrationWindow extends Window{
         HorizontalLayout actions = new HorizontalLayout(registerButton,cancelButton);
         actions.setSpacing(true);
 
-        TextField login = new TextField("Login");
+        final TextField login = new TextField("Login");
         login.addValidator(new BeanValidator(AuctionUser.class,"login"));
-        TextField password = new TextField("Password");
+        final TextField password = new TextField("Password");
         password.addValidator(new BeanValidator(AuctionUser.class,"password"));
-        TextField fname = new TextField("First name");
+        final TextField fname = new TextField("First name");
         fname.addValidator(new BeanValidator(AuctionUser.class,"fname"));
-        TextField sname = new TextField("Last name");
+        final TextField sname = new TextField("Last name");
         sname.addValidator(new BeanValidator(AuctionUser.class,"sname"));
 
         FormLayout regForm = new FormLayout(login,password,fname,sname,actions);

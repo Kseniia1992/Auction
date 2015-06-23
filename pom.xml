@@ -14,6 +14,7 @@
     </modules>
 
     <build>
+        <finalName>auction</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

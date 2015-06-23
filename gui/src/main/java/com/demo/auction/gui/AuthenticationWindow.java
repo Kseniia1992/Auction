@@ -32,9 +32,9 @@ public class AuthenticationWindow extends Window {
             }
         });
 
-        TextField login = new TextField("Login");
+        final TextField login = new TextField("Login");
         login.setInputPrompt("Login");
-        PasswordField password = new PasswordField("Password");
+        final PasswordField password = new PasswordField("Password");
         password.setInputPrompt("Password");
 
         HorizontalLayout actions = new HorizontalLayout(loginButton,linkLayout);

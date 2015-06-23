@@ -19,7 +19,7 @@ public class NewBidWindow extends Window {
 
     private void createContent() {
         Button okButton = new Button("Ok");
-        TextField bidField = new TextField();
+        final TextField bidField = new TextField();
         bidField.addValidator(new IntegerRangeValidator("set numeric",2,1000000));
         Label label = new Label("$");
         Label bidLabel = new Label("Bid");
