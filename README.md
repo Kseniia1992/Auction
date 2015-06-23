@@ -12,7 +12,7 @@ WebService subsystem is used for implementation of the system's logic.
 
 **TomEE settings:** 
 * download and copy **postgresql-9.1-903.jdbc4.jar** to apache-tomee-webprofile-1.7.0/lib 
-* add to apache-tomee-webprofile-1.7.0/conf/tomee.xml
+* add to apache-tomee-webprofile-1.7.0/conf/**tomee.xml**
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <tomee>
