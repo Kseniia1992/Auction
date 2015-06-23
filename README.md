@@ -28,9 +28,9 @@ WebService subsystem is used for implementation of the system's logic.
 **mvn clean install**
 
 #Deploying
-Copy ./Auction/gui/target/auction.war to apache-tomee-webprofile-1.7.1/webapps
+Copy ./Auction/gui/target/auction.war to apache-tomee-webprofile-1.7.0/webapps
 
-Run tomee: **apache-tomee-webprofile-1.7.1/bin/catalina.sh run**
+Run tomee: **apache-tomee-webprofile-1.7.0/bin/catalina.sh run**
 
 **localhost:8080/auction**
 
